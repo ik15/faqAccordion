@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  background: linear-gradient(180deg, #B068E9 0%, #6463E7 100%);
+  min-height: 100vh;
+  position: relative;
+}
+
+.main-content {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFF;
+  box-shadow: 0px 50px 50px -20px rgb(53 18 122 / 50%);
+  border-radius: 23px;
+  width: 320px;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-repeat: no-repeat;
+  left: 50%;
+}
+
+/* image div */
+.image-div {
+  position: relative;
+}
+
+.main-img {
+  display: block;
+  height: 140px;
+  width: 240px;
+  position: absolute;
+  top: -80%;
+}
+
+.txt-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px 0;  
+}
+
+.main-header {
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 40px;
+  color: #1E1F36;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.question-box {
+  border-bottom: 1px solid #E8E8EA;
+  margin-bottom: 15px;
+}
+
+.question-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.question {
+  font-family: 'Kumbh Sans';
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #4B4C5F;
+}
+
+.question:hover {
+  color: #F47B56;
+}
+
+.pannel {
+  overflow: hidden;
+  display: none;
+  margin-bottom: 5px;
+}
+
+/* active class from js */
+.active p {
+  font-weight: bold;
+  color: black;
+}
+
+.active img {
+  display: none;
+}
+
+.span {
+  display: none;
+}
+
+.active span {
+  display: block;
+}
+
+.main-img-desktop {
+  display: none;
+}
+
+.shadow-desktop {
+  display: none;
+}
+
+.ilustration {
+  display: none;
+}
+
+
+/* desktop screen */
+@media screen and (min-width: 1025px) {
+
+  .txt-content {
+    padding-left: 15px;
+  }
+  
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    width: 800px;
+    padding: 60px 0;
+  }
+
+  .image-div {
+    position: relative;
+  }
+
+  .main-img {
+    display: none;
+  }
+
+  .shadow {
+    display: none;
+  }
+
+  .ilustration {
+    display: block;
+    position: absolute;
+    top: 41%;
+    left: -32%;
+  }
+
+  .main-img-desktop {
+    display: block;
+    position: absolute;
+    left: -20%;
+    top: 4%;
+  }
+
+  .shadow-desktop {
+    display: block;
+    width: 450px;
+  }
+
+  .main-header {
+    text-align: inherit;
+  }
+
+}
+
